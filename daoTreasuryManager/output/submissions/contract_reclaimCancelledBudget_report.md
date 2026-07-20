@@ -25,8 +25,7 @@ BUG CONFIRMED: epochSpent increases for rollover proposal
  proposal_status = 2]
 ```
 
-3. **Validation Script Reference:**
-*The absolute mathematical proof can be verified by running the automatically generated validation script saved locally at:* `output/proofs/contract_reclaimCancelledBudget_1_proof.py`
+3. **Validation:** Verified via Z3 counterexample (above) and reproduced as a passing Foundry exploit test in this repo's logs/ directory.
 
 **Recommendation:**
 Refactor the function scope to enforce strict ordering, boundary locks, or precision adjustments. Below is the verified remediation layout:
