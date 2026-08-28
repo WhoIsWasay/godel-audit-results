@@ -47,14 +47,15 @@ found, proven, and reproduced as a passing exploit test.
 - `collateralizeDebtPosition`
 
 ### Real Competitive Audits (Code4rena)
-- `IdleYieldSource` — PoolTogether V3 yield source (Code4rena 2021-06). Found H-01: wrong variable in redeemToken (forge-confirmed).
-- `YearnV2YieldSource` — PoolTogether V3 yield source (Code4rena 2021-06). Found H-02: underflow in _withdrawFromVault (Z3-proven) + 2 precision-loss bugs (forge-confirmed).
+- `PoolTogetherV3/` — PoolTogether V3 yield sources (Code4rena 2021-06)
+  - `IdleYieldSource` — Found H-01: wrong variable in redeemToken (forge-confirmed)
+  - `YearnV2YieldSource` — Found H-02: inverted subtraction in _withdrawFromVault (Z3-proven) + 2 precision-loss bugs in share conversion (forge-confirmed, not in original C4 report)
 
 ## Status
 
 **Synthetic benchmarks:** 19/23 planted bugs found (82.6% catch rate) across 7 contracts.
 
-**Real competitive audits:** 4 findings across 2 Code4rena contracts, including 3 forge-confirmed EVM exploits matching known high-severity findings from the original human audit reports.
+**Real competitive audits:** 4 findings across 2 contracts from the Code4rena 2021-06 PoolTogether V3 contest. 2 match known high-severity findings from the original human audit (H-01, H-02); 2 precision-loss bugs in YearnV2YieldSource share conversion were independently identified and not in the original C4 report.
 
 ## Contact
 
