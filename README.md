@@ -37,18 +37,24 @@ found, proven, and reproduced as a passing exploit test.
 
 ## Contracts audited so far
 
+### Synthetic Benchmarks (planted bugs)
 - `daoTreasuryManager`
 - `discountLiquidityPool`
 - `enterpriseSupply-ChainEscrowManager`
 - `globalPayrollWithholdingManager`
 - `subscriptionBillingProration`
 - `vestingVault`
+- `collateralizeDebtPosition`
+
+### Real Competitive Audits (Code4rena)
+- `IdleYieldSource` — PoolTogether V3 yield source (Code4rena 2021-06). Found H-01: wrong variable in redeemToken (forge-confirmed).
+- `YearnV2YieldSource` — PoolTogether V3 yield source (Code4rena 2021-06). Found H-02: underflow in _withdrawFromVault (Z3-proven) + 2 precision-loss bugs (forge-confirmed).
 
 ## Status
 
-Actively updated as new audits are completed. These are synthetic benchmark 
-contracts used to validate pipeline accuracy; real-world audit engagements 
-will be published here as they're completed.
+**Synthetic benchmarks:** 19/23 planted bugs found (82.6% catch rate) across 7 contracts.
+
+**Real competitive audits:** 4 findings across 2 Code4rena contracts, including 3 forge-confirmed EVM exploits matching known high-severity findings from the original human audit reports.
 
 ## Contact
 

@@ -1,0 +1,1 @@
+shares = tokens * totalSupply() / _totalTokens;
