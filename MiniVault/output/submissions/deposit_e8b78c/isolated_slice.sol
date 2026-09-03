@@ -1,0 +1,1 @@
+assets > 0 => shares > 0 (Anti-Dilution, README Core Invariant 1)

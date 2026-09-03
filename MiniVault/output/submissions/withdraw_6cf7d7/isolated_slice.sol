@@ -1,0 +1,1 @@
+uint256 sharesToBurn = (assetsRequested * totalSupply) / totalAssets; require(balances[msg.sender] >= sharesToBurn, "Insufficient balance");
