@@ -54,7 +54,9 @@ found, proven, and reproduced as a passing exploit test.
 
 ## Status
 
-**Synthetic benchmarks:** 23/27 planted bugs found (85.2% catch rate) across 8 contracts (MiniVault included).
+**Synthetic benchmarks:** 23/27 planted bugs found (85.2% catch rate) across 8 synthetic contracts (MiniVault included).
+
+**Contracts tested:** 9 in total — the 8 synthetic benchmarks plus the PoolTogether V3 Code4rena audit.
 
 **Real competitive audits:** 4 findings across 2 contracts from the Code4rena 2021-06 PoolTogether V3 contest. 2 match known high-severity findings from the original human audit (H-01, H-02); 2 precision-loss bugs in YearnV2YieldSource share conversion were independently identified and not in the original C4 report.
 
