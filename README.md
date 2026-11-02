@@ -45,6 +45,7 @@ found, proven, and reproduced as a passing exploit test.
 - `subscriptionBillingProration`
 - `vestingVault`
 - `collateralizeDebtPosition`
+- `MiniVault` - 4 planted bugs, 4 found (demo contract)
 
 ### Real Competitive Audits (Code4rena)
 - `PoolTogetherV3/` — PoolTogether V3 yield sources (Code4rena 2021-06)
@@ -53,7 +54,7 @@ found, proven, and reproduced as a passing exploit test.
 
 ## Status
 
-**Synthetic benchmarks:** 19/23 planted bugs found (82.6% catch rate) across 7 contracts.
+**Synthetic benchmarks:** 23/27 planted bugs found (85.2% catch rate) across 8 contracts (MiniVault included).
 
 **Real competitive audits:** 4 findings across 2 contracts from the Code4rena 2021-06 PoolTogether V3 contest. 2 match known high-severity findings from the original human audit (H-01, H-02); 2 precision-loss bugs in YearnV2YieldSource share conversion were independently identified and not in the original C4 report.
 
